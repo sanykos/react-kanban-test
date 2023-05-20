@@ -6,7 +6,7 @@
 
 ## Инструменты
 
-- React + Redux, JS или TS – на выбор. Для визуального оформления можно использовать любую библиотеку типа bootstrap, materialize и тд, но лучше если сразу [CONSTA](https://consta.design/libs/uikit). В качестве источника данных можно использовать любой сервис типа [jsonplaceholder](https://jsonplaceholder.typicode.com/).
+- React + Redux, JS или TS – на выбор. Для визуального оформления можно использовать любую библиотеку типа bootstrap, materialize и тд, но лучше если сразу [CONSTA](https://consta.design/libs/uikit){:target="\_blank"}. В качестве источника данных можно использовать любой сервис типа [jsonplaceholder](https://jsonplaceholder.typicode.com/){:target="\_blank"}.
 
 ## Условие
 
