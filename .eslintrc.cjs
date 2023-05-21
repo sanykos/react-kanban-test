@@ -8,8 +8,24 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'eslint-plugin-import'],
   rules: {
     'react-refresh/only-export-components': 'warn',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always-and-inside-groups',
+      },
+    ],
   },
 };

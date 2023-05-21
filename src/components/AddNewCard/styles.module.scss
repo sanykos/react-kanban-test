@@ -1,0 +1,20 @@
+.newCardModal {
+  padding: 20px;
+  .newCardModalTitle {
+    margin-bottom: 30px;
+  }
+  .wrapperBtns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    .newCardTitleField {
+      margin-bottom: 20px;
+    }
+    .newCardDescriptionField {
+      margin-bottom: 30px;
+    }
+  }
+}

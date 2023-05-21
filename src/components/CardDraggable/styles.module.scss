@@ -1,0 +1,15 @@
+.card {
+  width: 100%;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .cardTitle {
+    font-size: 14px;
+  }
+  .closeBtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+}
