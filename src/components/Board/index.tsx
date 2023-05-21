@@ -11,10 +11,6 @@ import styles from './styles.module.scss';
 
 export const Board: FC = () => {
   const { boards, isLoading, error } = useAppSelector((state) => state.board);
-  const getTasksByListId = (id: number) => {
-    return boards.find((board) => board.id === id)?.cards || [];
-  };
-
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -33,14 +29,8 @@ export const Board: FC = () => {
 
   return (
     <main className={styles.board}>
-      {boards.map(({ id, title, status }) => (
-        <Column
-          key={id}
-          id={id}
-          title={title}
-          getTasksByListId={getTasksByListId}
-          status={status}
-        />
+      {boards.map(({ id, title, status, cards }) => (
+        <Column key={id} id={id} title={title} cards={cards} status={status} />
       ))}
     </main>
   );

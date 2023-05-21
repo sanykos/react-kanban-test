@@ -69,7 +69,7 @@ export const boardSlice = createSlice({
     },
 
     [fetchDeleteCard.pending.type]: (state) => {
-      state.isLoading = false;
+      state.isLoading = true;
     },
     [fetchDeleteCard.fulfilled.type]: (state, action: PayloadAction<ICard>) => {
       state.isLoading = false;
@@ -84,7 +84,7 @@ export const boardSlice = createSlice({
     },
 
     [fetchAddCard.pending.type]: (state) => {
-      state.isLoading = false;
+      state.isLoading = true;
     },
     [fetchAddCard.fulfilled.type]: (state, action: PayloadAction<ICard>) => {
       state.isLoading = false;
@@ -99,7 +99,7 @@ export const boardSlice = createSlice({
     },
 
     [fetchUpdateCard.pending.type]: (state) => {
-      state.isLoading = false;
+      state.isLoading = true;
     },
     [fetchUpdateCard.fulfilled.type]: (state, action: PayloadAction<ICard>) => {
       state.isLoading = false;

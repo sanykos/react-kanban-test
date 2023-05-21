@@ -6,12 +6,13 @@ import { TextField } from '@consta/uikit/TextField';
 
 import styles from './styles.module.scss';
 
-import { useAppDispatch } from '@/hooks/redux';
+import { useAppDispatch, useAppSelector } from '@/hooks/redux';
 import { fetchAddCard } from '@/store/reducers/ActionCreators';
 
 import { ICard } from '@/types';
 
 export const AddNewCard: FC = () => {
+  const { error, isLoading } = useAppSelector((state) => state.board);
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState<string | null>('');
   const [description, setDescription] = useState<string | null>('');
@@ -28,6 +29,9 @@ export const AddNewCard: FC = () => {
 
   const addCardHandler = () => {
     dispatch(fetchAddCard({ title, body: description } as ICard));
+    if (!isLoading && !error) {
+      setShowForm(false);
+    }
   };
 
   return (

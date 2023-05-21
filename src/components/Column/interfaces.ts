@@ -4,5 +4,5 @@ export interface ColumnProps {
   id: number;
   title: string;
   status: StatusType;
-  getTasksByListId: (id: number) => ICard[];
+  cards: ICard[];
 }
