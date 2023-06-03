@@ -9,11 +9,11 @@ import { AddNewCard } from '../AddNewCard';
 import { CardDraggable } from '../CardDraggable';
 
 import { ColumnProps } from './interfaces';
-import { STATUS_MAP } from './constants';
 
 import styles from './styles.module.scss';
 
 import { useAppDispatch, useAppSelector } from '@/hooks/redux';
+import { STATUS_MAP } from '@/types';
 
 export const Column: FC<ColumnProps> = ({ id, title, status, cards }) => {
   const { draggedItem } = useAppSelector((state) => state.board);

@@ -1,11 +1,4 @@
-import { IBoard, ICardDragItem } from '../types';
-
-export interface AppState {
-  draggedItem: ICardDragItem | null;
-  isLoading: boolean;
-  error: string;
-  boards: IBoard[];
-}
+import { AppState } from '../types';
 
 export const INITIAL_BOARD: AppState = {
   draggedItem: null,

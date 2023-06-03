@@ -7,11 +7,11 @@ import { IconClose } from '@consta/uikit/IconClose';
 
 import { moveCard, setDraggableItem } from '@store/reducers/boardSlice';
 
-import { STATUS_MAP } from '../Column/constants';
-
 import { CardProps } from './interfaces';
 
 import styles from './styles.module.scss';
+
+import { STATUS_MAP } from '@/types';
 
 import { useAppDispatch, useAppSelector } from '@/hooks/redux';
 
